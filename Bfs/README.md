@@ -21,3 +21,21 @@ if fresh==0 then return the maximum time else return -1
 Total Time Complexity = O(m × n)
 
 Total Space Complexity = O(m × n)
+
+SHORTEST PATH IN THE MATRIX:
+
+very similar to the rotten orange problem
+
+Dfs wont work because it is asking for shortest path but dfs will give you all path ( shortest or longest)
+
+if grid[0][0] ==1 or grid[destination][destination]==1 return -1
+
+put(0, 0, 1 ) in the queue
+
+Make 8 direction call and keep putting the valid cell (0) or neighbour
+
+Pop (0, 0 ,0) and move on 
+
+process next element 
+
+if we have reached destination stop else return -1
