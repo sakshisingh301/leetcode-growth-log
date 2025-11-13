@@ -39,3 +39,31 @@ Pop (0, 0 ,0) and move on
 process next element 
 
 if we have reached destination stop else return -1
+
+01 MATRIX
+
+in this problem we have to find the distance of nearest zero for each cell
+
+if the cell is already zero then we don't need to find it
+
+focus on cell which are 1 
+
+so i reversed the approach, I tried finding nearest 1 from 0
+
+![matrix01.jpg](matrix01.jpg)
+
+Put all 0 in the queue shown in green.
+
+Start with (0,0,0), see if you find 1 in the neighbour, there are none so pop it and move on
+
+go with (0,1,0), we can see 1 so update the distance to 1 and put(1,1,1) in the queue
+
+continue it till the queue becomes empty
+
+problem is very similar to the ROTTEN ORANGES, SHORTEST PATH IN THE MATRIX
+
+
+Total Time Complexity = O(m × n)
+
+Total Space Complexity = O(m × n)
+
