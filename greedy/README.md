@@ -103,6 +103,88 @@ Now get the most frequent element and start diving the task
 [2,2]-> [1,1]->[0]
 
 
+LONGEST HAPPY STRING 
+
+very similar to task schedule, tough to code 
+
+a = 1, b = 1, c = 7
+
+put all the element with char and their count in a priority queue
+
+((c,7),(a,1),(b,1))--> element which most frequency will be at the top
+
+take out the most frequent element--> c, 7
+
+if the length< 2 or get last two char c1, c2, if it is not equal to current char which is empty here
+
+
+simply append to the stringbuilder and decrement the count
+
+string--> c : (c,6)
+
+push it back to the max_heap (c,6),(a,1)(b,1) : StringBuilder= c
+
+get the most frequent element : (c,6)
+
+length<2 so simply append to the stringbuilder, decrement the frequency and push it back to the max heap
+
+curr: (c,5),(a, 1),(b,1) : stringBuilder= cc
+
+get the most frequent element : (c, 5)
+
+Now length==2 && last two chars are equal to curr char which is c so now its time that we pick next frequent element and append it to the stringbuilder
+
+get next frequent element : (a, 1)-> append to the stringbuilder, decrement the frequency and push it to the maxheap(if updatedfrequency>0)
+
+stringbuilder=ccb
+
+get the most frequent element : (c, 5)
+
+length>2 but last two chars are not equal to curr char which is c right now hence just append it, decrement the counter
+
+stringbuilder=ccbc
+
+get the most frequent element : (c, 4)
+
+length>2 but last two chars are not equal to curr char which is c right now hence just append it, decrement the counter
+
+stringbuilder=ccbcc
+
+get the most frequent element : (c, 3)
+
+length>2 and last two chars are  equal to curr char which is c right now so now its time that we pick next frequent element and append it to the stringbuilder
+
+stringbuilder=ccbcca
+
+get the most frequent element : (c, 3)
+
+length>2 but last two chars are not equal to curr char which is c right now hence just append it, decrement the counter
+
+stringbuilder=ccbccac
+
+get the most frequent element : (c, 2)
+
+length>2 but last two chars are not equal to curr char which is c right now hence just append it, decrement the counter
+
+stringbuilder=ccbccacc
+
+Thats it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

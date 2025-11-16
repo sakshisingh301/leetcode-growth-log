@@ -69,11 +69,13 @@ public class TaskScheduler {
 
     }
 
+
+
     public static void main(String[] args) {
         char[] tasks = {'A', 'A', 'A', 'B', 'B', 'B'};
         //"A","A","A","B","B","B"
-       int n = 2;
-       System.out.println(leastInterval(tasks,n));
+        int n = 2;
+        System.out.println(leastInterval(tasks,n));
 
     }
 }
