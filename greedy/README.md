@@ -171,6 +171,11 @@ stringbuilder=ccbccacc
 Thats it
 
 
+REORGANIZED STRING:
+
+it is very similar to LONGEST HAPPY STRING 
+
+
 
 
 
