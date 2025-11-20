@@ -51,6 +51,7 @@ public class CourseSchedule {
 
         for(int neighbour: adj.get(start))
         {
+            // If the element has been visited already in one DFS call then it has a cycle and returns true
             if(dfsPath[neighbour])
             {
                 return true;
