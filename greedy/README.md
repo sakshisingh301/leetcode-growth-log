@@ -177,6 +177,31 @@ it is very similar to LONGEST HAPPY STRING
 
 
 
+Hands of Straight
+
+This question was merely simple but i made it complicated by using min heap 
+
+simply take a hashmap and put number and frequency and sort it by number so that minimum no is at the start 
+
+or 
+
+Use TreeMap
+
+create a window of groupSize [1,2,3,4,5]
+
+groupSize=4
+
+get 1 --> 2 is present --> 3 is present --> 4 is present (group size over)
+
+get 5 --> 6 is not present so return false
+
+very simple
+
+
+
+
+
+
 
 
 
