@@ -198,6 +198,28 @@ get 5 --> 6 is not present so return false
 very simple
 
 
+Valid parenthesis String
+
+found it simple
+
+ex: s = "(*))"
+
+keep track of left parenthesis(index)
+
+keep track of * (index)
+
+once we encounter right parenthesis check left parenthesis first (pop it)
+
+if left parenthesis is empty then check star stack and pop it
+
+if both of them are empty then we know for sure that it cannot be balanced
+
+lastly if there are elements in right parenthesis and * , check if they can be balanced with each other
+
+make sure that index of ( comes first then *
+
+time complexity : 0(N)
+
 
 
 
