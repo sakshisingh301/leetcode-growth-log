@@ -221,6 +221,19 @@ make sure that index of ( comes first then *
 time complexity : 0(N)
 
 
+PARTITION LABELS :
+
+
+![PetChain Logo](./images/Partionlabel.jpg)
+
+Store the last index of each letter
+
+a=8 , in one partition from a ----a -> 8 is max
+
+d=14 , in partition d to e --> e is max which is 15
+
+similarly 23 in the third partition
+
 
 
 

@@ -63,6 +63,7 @@ public class ValidParathesisString {
         // s = "(*))"
         // s="())*"
         // s= "()*("
+        // s="()(*"
        String s ="(*)";
        System.out.println(checkValidString(s));
     }
