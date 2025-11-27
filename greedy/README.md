@@ -235,6 +235,28 @@ d=14 , in partition d to e --> e is max which is 15
 similarly 23 in the third partition
 
 
+Merge Triplets to Form Target Triplet:
+
+triplets = [[2,5,3],[1,8,4],[1,7,5]], target = [2,7,5]
+
+First try to find bad triplets meaning [1,8,4] here if i take max of max(2,1) and max(7, 8) and max(4,5)
+
+we will get [2,8,5] we will never be able to obtain our target so discard them 
+
+keep three flags: x_found, y_found,z_found
+
+Iterate through the triplets and see if we can find target(x, y z)
+
+[2,5,3]--? We found x so x_found will be true
+
+[1,8,4]--? Discarded
+
+[1,7,5]--? We found y,z so y_found, z_found will be true
+
+if x_found, y_found,z_found are true return true
+
+
+
 
 
 
