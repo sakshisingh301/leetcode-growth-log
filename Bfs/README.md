@@ -67,3 +67,19 @@ Total Time Complexity = O(m × n)
 
 Total Space Complexity = O(m × n)
 
+OPEN THE LOCK:
+
+start with 0000, get next combination 
+
+There will be 8 next combination- clockwise(1000,0100,0010,0001) and anticlockwise(9000,0900,0090,0009)
+
+keep putting the element in the queue as well as visited set
+
+skip if we encounter deadEnds 
+
+return if we encounter the target
+
+Time Complexity: 0(10000)
+
+Space Complexity: 
+
