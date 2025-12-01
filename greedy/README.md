@@ -257,6 +257,58 @@ if x_found, y_found,z_found are true return true
 
 
 
+DOTA2 SENATOR:
+
+This question was difficult to understand only
+
+EX: RRDDD
+
+R1 R2 D1 D2 D3
+
+Round 1:
+
+0: R1 can make D1 inactive
+
+1: R2 can make D2 inactive
+
+2, 3 : These are D1 and D2 and are inactive so will be skipped
+
+4: D3 can make R1 inactive(R1 was active)
+
+Round 2: 
+
+0: R1 inactive so skip
+
+1: R2 will make D3 inactive 
+
+2: D1 inactive so skip
+
+3: D2 inactive so skip
+
+4: D3 inactive so skip
+
+
+Only R2 left hence answer will be radiant
+
+Solution: Two Queues
+
+Queue R → stores indexes of Radiant senators
+
+Queue D → stores indexes of Dire senators
+
+1-Pop one index from R and one from D.
+
+2-The senator with the smaller index acts first → bans the other senator.
+
+3-The winner is added back to its queue with an updated index for other rounds:
+
+newIndex = oldIndex + n(Because Since your work is done , you should be considered for next round )
+
+
+4- When one queue becomes empty, the other party wins.
+
+
+
 
 
 
