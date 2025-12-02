@@ -3,6 +3,14 @@ import java.util.Queue;
 
 public class Dota2Senator {
 
+
+    //idea is whoever is active will be pushed to the queue for next round and inactive ones will be removed automatically
+    //RRDDD
+    //take out element from R ->0
+    //take out element from D -> 2
+    // R is active and D will be removed and R will be pushed back for next round
+    // We are checking which element is active and which is not through indexes ex- R=0 && D=1 so R will make D inactive
+
     public String predictPartyVictory(String senate) {
 
         Queue<Integer> r_queue=new LinkedList<>();
