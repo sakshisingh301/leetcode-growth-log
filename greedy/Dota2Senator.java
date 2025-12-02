@@ -39,8 +39,69 @@ public class Dota2Senator {
         return !r_queue.isEmpty() ? "Radiant": "Dire";
 
     }
+    //with one queue
+    public static String predictPartyVictory1(String senate) {
+
+        int r_count=0;
+        int d_count=0;
+        int r_floating=0;
+        int d_floating=0;
+
+        Queue<Character> queue=new LinkedList<>();
+
+        for(int i=0;i<senate.length();i++)
+        {
+            queue.add(senate.charAt(i));
+            if(senate.charAt(i)=='R')
+            {
+                r_count++;
+
+            }
+            else {
+                d_count++;
+            }
+        }
+
+        while(r_count>0 && d_count>0)
+        {
+            char curr= queue.poll();
+            //check eligibilty to ban
+            if(curr=='R')
+            {
+                if(r_floating>0)
+                {
+                    r_count--;
+                    r_floating--;
+                }
+                else {
+                    queue.add('R');
+                    d_floating++;
+
+                }
+            }
+            else {
+                if(d_floating>0)
+                {
+                    d_count--;
+                    d_floating--;
+
+                }
+                else {
+                    queue.add('D');
+                    r_floating++;
+                }
+            }
+
+        }
+        return r_count>0?"Radiant":"Dire";
+
+    }
+
+
 
     public static void main(String[] args) {
-        //senate = "RRDDD"
+      String senate = "RRDDD";
+      System.out.println(predictPartyVictory1(senate));
+
     }
 }

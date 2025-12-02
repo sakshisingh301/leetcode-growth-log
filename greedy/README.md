@@ -307,6 +307,26 @@ newIndex = oldIndex + n(Because Since your work is done , you should be consider
 
 4- When one queue becomes empty, the other party wins.
 
+same solution with 1 queue
+
+keep r_count, d_count, r_floating, d_floating
+
+A senator is eligible if their own floating ban counter is 0.
+
+If we pop an R:
+
+If rFloatingBan > 0 → R is banned → remove R → decrement counters.
+
+Else → R is eligible → it bans a D → dFloatingBan++ → push R back.
+
+If we pop a D:
+
+If dFloatingBan > 0 → D is banned → decrement counters.
+
+Else → D is eligible → it bans an R → rFloatingBan++ → push D back.
+
+👉 Floating bans affect only the senator's OWN party, not the opponent’s.
+
 
 
 
