@@ -328,6 +328,36 @@ Else → D is eligible → it bans an R → rFloatingBan++ → push D back.
 👉 Floating bans affect only the senator's OWN party, not the opponent’s.
 
 
+Teemo Attack 
+
+timeSeries = [1,2], duration = 2
+
+First I came up with creating arraylist approach 
+
+for 1 : [1,2]
+
+for 2 : so 2 is already present in my arraylist so remove all the element starting from 2 index
+
+add 2,3 to the arraylist 
+
+result: {1,2,3}
+
+Another better solution without using space 
+
+define count = duration (2)->{1,2}
+
+define last which will point to last element (3)
+
+start from index 1
+
+at index 1 : first we have to remove the overlap element from the count then add element with duration
+
+meaning at 1 : count= count -1 (because only 2 is common)=> count=1
+
+count= count+duration(adding 2,3 ) => count =3
+
+
+
 
 
 
