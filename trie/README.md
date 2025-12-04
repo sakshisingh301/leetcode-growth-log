@@ -62,3 +62,15 @@ Return true (the prefix exists, even if no word ends here)
 
 
 
+word dictionary :
+
+Similar to implement tries but search logic is different 
+
+![img_2.png](img_2.png)
+
+![img_3.png](img_3.png)
+
+![img_4.png](img_4.png)
+
+![img_5.png](img_5.png)
+
