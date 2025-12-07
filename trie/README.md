@@ -74,3 +74,10 @@ Similar to implement tries but search logic is different
 
 ![img_5.png](img_5.png)
 
+
+LONGEST WORD IN DICTIONARY:
+
+![img_6.png](img_6.png)
+
+![img_7.png](img_7.png)
+
