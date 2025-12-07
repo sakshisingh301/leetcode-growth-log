@@ -36,3 +36,14 @@ very similar to Number of closed Island
 Start DFS call and count the island and check if it is closed
 
 for checking closed condition, I have kept a boolean and i am checking if in grid1, its 1.
+
+
+VALID GRAPH TREE: 
+
+this question took me time to understand which was unusual. Its from the find cycle in undirected graph 
+
+![img_1.png](img_1.png)
+
+![img_2.png](img_2.png)
+
+![img_3.png](img_3.png)

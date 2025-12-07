@@ -72,6 +72,7 @@ class WordDictionary {
     }
     //{current-"bad", "mad", "lat" search ".ad"
     // mad
+    //apple , app.
     private boolean helper(String word, int index, TrieNodeForWordDictionary node) {
         if(index==word.length())
         {
