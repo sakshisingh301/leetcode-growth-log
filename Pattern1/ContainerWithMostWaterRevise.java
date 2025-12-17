@@ -23,8 +23,6 @@ public class ContainerWithMostWaterRevise {
 
         }
         return max_area;
-
-
     }
 
 
