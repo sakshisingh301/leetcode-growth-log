@@ -14,3 +14,9 @@ if the stack is empty, push ) index too to reset but before that whenever you se
 ![img_1.png](img_1.png)
 
 
+
+Asteroid Collision 
+
+
+
+![img_2.png](img_2.png)
