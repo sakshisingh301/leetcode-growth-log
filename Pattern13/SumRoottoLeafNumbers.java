@@ -16,10 +16,8 @@ public class SumRoottoLeafNumbers {
     int sum=0;
 
     public int sumNumbers(TreeNode root) {
-
         helper(root, 0);
         return sum;
-
     }
 
     private void helper(TreeNode root, int currentNumber) {
@@ -38,8 +36,6 @@ public class SumRoottoLeafNumbers {
         }
         helper(root.left, currentNumber);
         helper(root.right,currentNumber);
-
-
 
     }
 }
