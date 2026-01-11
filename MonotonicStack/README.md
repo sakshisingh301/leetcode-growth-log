@@ -20,3 +20,16 @@ Asteroid Collision
 
 
 ![img_2.png](img_2.png)
+
+
+Remove K Digits
+
+![img_3.png](img_3.png)
+
+![img_4.png](img_4.png)
+
+![img_5.png](img_5.png)
+
+put one element and then later make sure you are keeping the smallest number possible keeping k in limit
+
+
