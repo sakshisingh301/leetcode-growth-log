@@ -43,3 +43,10 @@ If the stack is empty, set ans = -1 because there is no greater element.
 If the stack is not empty and stack.peek() , then set ans = stack.peek().
 
 If the stack is not empty and stack.peek() ≤ curr, then pop().
+
+
+Next Greater Element II
+
+same concept as Next Greater Element I only difference is first we put all the element in the stack starting from the last
+
+keep element greater than current element in the stack(same logic )
