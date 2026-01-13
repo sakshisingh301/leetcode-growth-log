@@ -32,4 +32,14 @@ Remove K Digits
 
 put one element and then later make sure you are keeping the smallest number possible keeping k in limit
 
+Next Greater Element I
 
+Start with the last element.
+
+Only add numbers to the stack that are greater than the current element.
+
+If the stack is empty, set ans = -1 because there is no greater element.
+
+If the stack is not empty and stack.peek() , then set ans = stack.peek().
+
+If the stack is not empty and stack.peek() ≤ curr, then pop().
