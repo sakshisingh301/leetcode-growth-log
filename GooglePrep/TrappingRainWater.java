@@ -2,7 +2,7 @@ public class TrappingRainWater {
 
     public int trap(int[] height) {
 
-        //see the pattern when the water is stored, if there is tall building at the left and
+        //see the pattern : the water is stored, if there is tall building at the left and
         //tall building at the right
         //see how much water it can trap min(left,right)-current_height
         // see diagram properly, i understood this question by chatgpt hint and seeing diagram again and again
@@ -23,8 +23,6 @@ public class TrappingRainWater {
             else {
                 max_left[i]=maximum_height_left;
             }
-
-
 
         }
 
