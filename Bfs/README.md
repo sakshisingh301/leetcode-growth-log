@@ -83,3 +83,61 @@ Time Complexity: 0(10000)
 
 Space Complexity: 
 
+
+
+
+🚨 BFS TRIGGERS (memorize this list)
+
+Shortest / minimum
+
+“minimum distance”
+
+“shortest path”
+
+“nearest”
+
+“minimum steps”
+
+“minimum moves”
+
+“fewest operations”
+
+Distance / time / steps
+
+Distance between cells
+
+Time taken to reach something
+
+Number of levels
+
+Spreading / expansion
+
+Fire spreads
+
+Rot spreads
+
+Infection spreads
+
+Water flows
+
+Signal propagates
+
+Unweighted graph
+
+Each move costs the same (grid, tree edges, etc.)
+
+Level-by-level behavior
+
+“At minute 1… minute 2…”
+
+“All nodes at distance k”
+
+📌 If you see even ONE of these → BFS first, no debate
+
+
+Map of the highest Peak 
+
+Problem very similar to 01 Matrix (multi source BFS)
+
+put all water first in the queue and go level by level and keep increasing the height
+
