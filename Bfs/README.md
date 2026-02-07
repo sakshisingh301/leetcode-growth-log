@@ -154,5 +154,7 @@ we have to stop whenever we get food
 
 “What if BFS goes in a direction where the distance is not minimum?”- my doubt 
 
-but BFS makes sure that we cover the least distance first then if not found then we go in level
+but BFS makes sure that we cover the least distance first then if not found then we move to the next level
+
+wheras Dfs goes deeper, it might take the longer route first so its hard to identify something minimum.
 
