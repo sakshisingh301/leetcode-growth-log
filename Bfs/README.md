@@ -141,3 +141,18 @@ Problem very similar to 01 Matrix (multi source BFS)
 
 put all water first in the queue and go level by level and keep increasing the height
 
+
+Shortest Path to Get Food
+
+Very similar to map of the highest peak/01Matrix
+
+same code 
+
+overall the idea is to understand why only BFS works and not DFS 
+
+we have to stop whenever we get food 
+
+“What if BFS goes in a direction where the distance is not minimum?”- my doubt 
+
+but BFS makes sure that we cover the least distance first then if not found then we go in level
+
