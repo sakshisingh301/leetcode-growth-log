@@ -1,4 +1,4 @@
-ROTTEN ORANGES:
+**ROTTEN ORANGES:**
 
 Initial thought was to use DFS but if i choose one rotten orange and make a DFS call, in one call it will make all the fresh one rotten (connected)
 but we also want to find minimum time and we will not be able to calculate that.
@@ -22,7 +22,7 @@ Total Time Complexity = O(m × n)
 
 Total Space Complexity = O(m × n)
 
-SHORTEST PATH IN THE MATRIX:
+**SHORTEST PATH IN THE MATRIX**
 
 very similar to the rotten orange problem
 
@@ -40,7 +40,7 @@ process next element
 
 if we have reached destination stop else return -1
 
-01 MATRIX
+**01 MATRIX**
 
 in this problem we have to find the distance of nearest zero for each cell
 
@@ -67,7 +67,7 @@ Total Time Complexity = O(m × n)
 
 Total Space Complexity = O(m × n)
 
-OPEN THE LOCK:
+**OPEN THE LOCK**
 
 start with 0000, get next combination 
 
@@ -86,7 +86,7 @@ Space Complexity:
 
 
 
-🚨 BFS TRIGGERS (memorize this list)
+**🚨 BFS TRIGGERS (memorize this list)**
 
 Shortest / minimum
 
@@ -135,14 +135,14 @@ Level-by-level behavior
 📌 If you see even ONE of these → BFS first, no debate
 
 
-Map of the highest Peak 
+**Map of the highest Peak**
 
 Problem very similar to 01 Matrix (multi source BFS)
 
 put all water first in the queue and go level by level and keep increasing the height
 
 
-Shortest Path to Get Food
+**Shortest Path to Get Food**
 
 Very similar to map of the highest peak/01Matrix
 
