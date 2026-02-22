@@ -50,3 +50,56 @@ shrink the window, update actual_sum and ideal_sum
 
 phewww
 
+
+
+Permutation of the String: 
+
+Intial thought process: I calculate the window length which will be equal to the length of s1
+
+i iterate through s2 and go till that window length , sort that part of the substring and compare with s1 that would be too much
+Take the substring and sort it -0(mlogm)—> if the size of window is m
+
+suppose there are n windows —→0(nmlogm)
+
+We want O(n)
+
+similar to anagram
+
+
+
+Find Anagram in a string 
+
+this problem was very similar to permutation in String. Had hard time understanding when to increaseor decrease the counter. 
+Problem looked easy on paper. So the idea is one window is fixed which is p's 
+so you count the element in that window and stores their frequency. Now count the first window in s and store the frequencies
+
+
+ex-
+s="aaab"
+
+p="aab"
+
+freqS= a-->3
+
+freqP= a-->2 b-->1
+
+we check the count if they are equal if yes then "ANAGRAM"
+
+now we move window 
+
+new window for s --> "aab"   freqS=a-->2 b-->1
+
+removed char =a and its current count is equal to a count in p so count++
+
+added char = b and its previous count (b=1) in p and current count in s(b==1) is equal so count++ again
+
+count=26 
+
+hence anagram 
+      
+
+
+
+![img.png](img.png)
+
+![img_1.png](img_1.png)

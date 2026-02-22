@@ -86,6 +86,64 @@ public class PermutationinString {
     }
 
 
+    public static boolean checkInclusionAdvanced(String s1, String s2) {
+        int [] freqS1=new int[26];
+        int [] freqS2=new int[26];
+
+        for(int i=0;i<s1.length();i++)
+        {
+            freqS1[s1.charAt(i)-'a']++;
+        }
+
+        for(int i=0;i<s1.length();i++)
+        {
+            freqS2[s2.charAt(i)-'a']++;
+        }
+        int count=0;
+
+        for(int i=0;i<26;i++)
+        {
+            if(freqS1[i]==freqS2[i])
+            {
+                count++;
+
+            }
+        }
+
+        for(int i=0;i<s2.length()-s1.length();i++)
+        {
+            if(count==26) return true;
+            int oldIndex=s2.charAt(i)-'a';
+            int newIndex=s2.charAt(i+s1.length())-'a';
+            //remove oldindex
+            freqS2[oldIndex]--;
+            if(freqS1[oldIndex]==freqS2[oldIndex])
+            {
+                count++;
+            }
+            else if(freqS1[oldIndex]+1==freqS2[oldIndex]){
+                count--;
+            }
+
+            //add newIndex
+            freqS2[newIndex]++;
+            if(freqS1[newIndex]==freqS2[newIndex])
+            {
+                count++;
+
+            }
+            else if(freqS2[newIndex]-1==freqS2[newIndex]) {
+                count--;
+            }
+        }
+        return count==26;
+
+
+
+    }
+
+
+
 
     public static void main(String[] args) {
 
