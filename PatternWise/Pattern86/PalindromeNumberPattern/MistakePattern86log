@@ -1,0 +1,8 @@
+1. end = s.length()-1
+2. for valid palindrome i thought of creating a counter=0 and when we encounter non palindromic string
+, increase the counter by 1(only for the first non palindromic characters) and later if it comes just return false
+wrong logic
+
+once you find the mismatch, do this instead
+
+isPalindrome(start + 1, end) || isPalindrome(start, end - 1)

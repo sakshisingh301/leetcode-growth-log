@@ -1,0 +1,44 @@
+roman to Integer
+
+first thing is that you store all possible combination
+
+  int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+  String[] romans = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+
+ex- 3749
+
+Ask what is the maximum number which i can take from values
+
+1000? yes
+
+new num= 3749-1000=2749
+
+Maximum number now, still 1000
+
+new num=2749-1000= 1749
+
+Maximum number now, Still 1000
+
+new num=1749-1000= 749
+
+Maximum number now, 500 now
+
+new num= 249
+
+Maximum number now, 100
+
+new num= 149
+
+Maximum number now, 100
+
+new num= 49
+
+Maximum number now, 40
+
+new num=9
+
+
+Maximum number now, 9
+
+
+

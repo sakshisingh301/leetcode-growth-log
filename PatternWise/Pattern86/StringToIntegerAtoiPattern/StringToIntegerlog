@@ -1,0 +1,5 @@
+Try to simplify the problem. Dont overcomplicate it
+
+1. We want to skip the whitespace
+2. we want to find the sign
+3. append the integer while check the range

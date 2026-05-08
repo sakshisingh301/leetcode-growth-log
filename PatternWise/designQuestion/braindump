@@ -1,0 +1,28 @@
+Intialize outside but defined it inside the constructor
+
+Use Arrays.fill(arr, -1)
+
+HashMap implementation
+
+Internally Hashmap consists of array of buckets and buckets size is fixed and changes dynamically
+ if the more keys are added:
+
+bucket[0]
+bucket[1]
+bucket[2]
+bucket[3]
+...
+bucket[n-1]
+
+size=1000 (size of the buckets)
+
+How key is placed in the Bucket?
+
+index= keys % size
+
+at bucket[index], we just insert key and value in the form of linkedlist
+If multiple keys are mapped to the same bucket then collision happens which led to linkedlist chaining
+
+Load factor: How full the hashmap is
+Rehashing : When the Hashmap is full then we increase the size of the bucket
+
