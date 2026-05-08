@@ -26,3 +26,5 @@ If multiple keys are mapped to the same bucket then collision happens which led 
 Load factor: How full the hashmap is
 Rehashing : When the Hashmap is full then we increase the size of the bucket
 
+implementation of HashSet is also very similar, The difference is that the node class have only key
+
