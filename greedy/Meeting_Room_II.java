@@ -1,24 +1,36 @@
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 public class Meeting_Room_II {
 
     public static int minMeetingRooms(int[][] intervals) {
+        //sort this by start pointer
+        Arrays.sort(intervals, (a,b)-> Integer.compare(a[0],b[0]));
+        int minimumRoom=1;
+        //define minheap
+        PriorityQueue<Integer> minHeap=new PriorityQueue<>();
+        minHeap.add(intervals[0][1]);
 
-        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
-        int room_required=1;
-        for(int i=1;i<intervals.length;i++)
+        for(int i=1;i< intervals.length;i++)
         {
-            int curr_start=intervals[i][0];
-            int curr_end=intervals[i][1];
-            int pre_start=intervals[i-1][0];
-            int pre_end=intervals[i-1][1];
-            if(pre_end>curr_start)
+
+            //check if they are coinciding, increase the room counter
+            if(!minHeap.isEmpty() &&minHeap.peek()>intervals[i][0])
             {
-                room_required++;
+                minimumRoom++;
+
             }
+            else {
+                minHeap.poll();
+            }
+            minHeap.add(intervals[i][1]);
+
+
 
         }
-        return room_required;
+        return minimumRoom;
+
+
 
 
 
@@ -27,6 +39,8 @@ public class Meeting_Room_II {
     public static void main(String[] args) {
         int [] [] intervals ={{9,10},{4,9},{4,17}};
         System.out.println(minMeetingRooms(intervals));
+        //Input: intervals = [[0,30],[5,10],[15,20]]
+        //Output: 2
 
 
     }
