@@ -1,0 +1,23 @@
+package InplaceArrayRotationPattern4;
+
+public class HindexII {
+
+    public int hIndex(int[] citations) {
+
+        for(int i=0;i<citations.length;i++)
+        {
+            int h=citations.length-i;
+            if(citations[i]>=h)
+            {
+                return h;
+            }
+        }
+        return 0;
+
+    }
+
+    //Input: citations = [0,1,3,5,6]
+    //Output: 3
+    //Explanation: [0,1,3,5,6] means the researcher has 5 papers in total and each of them had received 0, 1, 3, 5, 6 citations respectively.
+    //Since the researcher has 3 papers with at least 3 citations each and the remaining two with no more than 3 citations each, their h-index is 3.
+}
